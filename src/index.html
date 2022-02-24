@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IoT Application Developer Tech Test:Achmad Yaseh Mutawaqql A.</title>
+</head>
+<body>
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <div id="main">
+       
+        <button class="tablink" onclick="openPage('Data0', this, 'red')">Document</button>
+        <button class="tablink" onclick="openPage('Data1', this, 'red')">Answer.1</button>
+        <button class="tablink" id="defaultOpen" onclick="openPage('Data2', this, 'green')" >Answer.2</button>
+        <button class="tablink" onclick="openPage('Data3', this, 'blue')">Answer.3</button>
+        <button class="tablink" onclick="openPage('Data4', this, 'red')">Answer.4</button>
+        <button class="tablink" id="defaultOpen" onclick="openPage('Data5', this, 'green')" >Answer.5</button>
+        
+        
+        <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+        
+        <div id="Data0" class="tabcontent">
+            <h3>Document</h3>
+            <p>Question</p>
+            <embed src="http://localhost:5000/api/pdf" width="800px" height="2100px" />
+        </div>
+
+        <div id="Data1" class="tabcontent">
+            <h3>Answer 1</h3>
+            <p>Salary Conversion</p>
+            <div class="tableboard1"></div>
+        </div>
+
+        <div id="Data2" class="tabcontent">
+            <h3>Answer 2</h3>
+            <p>Sensors Aggregation</p>
+            <p><a href="http://localhost:5000/api/q2 " target="_blank">Open localhost:5000/api/q2</a></p>
+            
+        </div>
+
+        <div id="Data3" class="tabcontent">
+            <h3>Answer 3</h3>
+            <p>Sensors Aggregation Simulation</p>
+            
+            
+        </div>
+        <div id="Data4" class="tabcontent">
+            <h3>Answer 4</h3>
+            <p>Sensors Aggregation</p>
+            <p><a href="http://localhost:5000/api/q2 " target="_blank">Open localhost:5000/api/q2</a></p>
+            
+        </div>
+        <div id="Data5" class="tabcontent">
+            <h3>Answer 5</h3>
+            <p>Sensors Aggregation</p>
+            <p><a href="http://localhost:5000/api/q2 " target="_blank">Open localhost:5000/api/q2</a></p>
+            
+        </div>
+        <div id="About" class="tabcontent">
+            <h3>About Me</h3>
+            <p> Hi, my name is Achmad Yaseh Mutawaqqil Alalloh. You can call me Yaseh. 
+                I am twenty-three years old. I am a graduate alumnus at Sepuluh Nopember Institute of Technology majoring in Physics Engineering.
+                I have enough experience that I have accumulated during my studies from internal and official projects from certain companies. 
+                Majoring in Instrumentation , Control ,and Programming. Passionate for Human Machine Interface and Embedded System with IoT capability.
+                Always eager to look for place to learn or work and make interesting technology
+            </p>
+        </div>
+    </div>
+    <!-- <script src="bundle.js" type="text/javascript"></script> -->
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="page.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
+    
+    
+    
+    
+</body>
+</html>
