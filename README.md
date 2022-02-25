@@ -45,6 +45,12 @@ RUN TEST
 ```  sudo docker-compose --build -d ```
 
 
+### Problems that are frequently encountered
+
+change MONGODB_URL_LOCAL in backend/.env with IP-DOCKER = your_docker_ip
+
+```  MONGODB_URL_LOCAL= 'mongodb://IP-DOCKER:27017/chickin' ```
+
 if you have question , email me
 
 
