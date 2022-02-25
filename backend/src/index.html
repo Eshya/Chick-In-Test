@@ -7,7 +7,7 @@
     <title>IoT Application Developer Tech Test:Achmad Yaseh Mutawaqql A.</title>
 </head>
 <body>
-    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    
     <div id="main">
        
         <button class="tablink" id="defaultOpen" onclick="openPage('Data0', this, 'red')">Document</button>
@@ -45,8 +45,21 @@
 
         <div id="Data3" class="tabcontent">
             <h3>Answer 3</h3>
-            <p>Sensors Aggregation Simulation</p>
-            
+            <p>Different Between git merge and git rebase</p><br><br>
+            <p> Both git rebase and git merge ar used to synchronise changes between branches. The difference between to command is git rebase will reivse the commit
+                but keep clean organised history, while git merge will keep all the original commits and add ones automatically but gives out circuit board line like history.
+            </p>
+            <img src="image/merge_example.png"  style="width: 400px;height: 200px; margin: auto;">
+            <p>Merging commits changes to another branch. It takes the contents of a source branch and integrates it with a target branch.</p>
+            <p>Imagine you have two branches: feature and master. feature is from master, after some time, for some reason, master has some changes which feature doesn't have</p>
+            <p>git merge Wouldn’t change the commit hash and will create a new commit automatically </p>
+            <p>When there are many people are using the git merge in a project, it will cause commits across each other in history, in the end it will show the commits like a 
+                Circuit board
+            </p>
+            <p>Git rebase is a command that allows developers to integrate changes from one branch to another.</p>
+            <p>Git rebase and merge both integrate changes from one branch into another. Where they differ is how it's done. Git rebase moves a feature branch into a master. 
+                Git merge adds a new commit, preserving the history.</p>
+            <img src="image/rebase_example.png" tyle="width: 400px;height: 200px; margin: auto;">
             
         </div>
         <div id="Data4" class="tabcontent">
@@ -57,8 +70,16 @@
         </div>
         <div id="Data5" class="tabcontent">
             <h3>Answer 5</h3>
-            <p>Sensors Aggregation</p>
-            <p><a href="http://localhost:5000/api/q2 " target="_blank">Open localhost:5000/api/q2</a></p>
+            <p>MongoDB REST-API & MQTT</p>
+            <label for="input5">Save To MongoDB : </label>
+            <input type="text" id="input5" style="width: 100%;" value='test'><br><br>
+            <button id="buttonAns5"> Save </button><br><br>
+
+            <label for="input6">Save To MongoDB with MQTT : </label>
+            <input type="text" id="input6" style="width: 100%;" value='test'><br><br>
+            <button id="buttonAns6"> Save </button><br><br>
+
+
             
         </div>
         <div id="About" class="tabcontent">

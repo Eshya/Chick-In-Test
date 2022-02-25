@@ -6,7 +6,7 @@
     "test": "node src/test.js",
     "build": "webpack",
     "start": "node server",
-    "prod": "npm run build && npm run start",
+    "prod": "node server",
     "js": "nodemon src/test.js --exec babel-node --"
   },
   "author": "",
@@ -21,7 +21,9 @@
     "express": "^4.17.2",
     "fs": "0.0.1-security",
     "json-groupby": "^1.1.0",
-    "merge-json": "0.1.0-b.3"
+    "merge-json": "0.1.0-b.3",
+    "mongoose": "^6.2.3",
+    "mosca": "^2.8.3"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^9.1.0",

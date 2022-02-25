@@ -18,15 +18,33 @@ Check Version Node & NPM
 ``` node -v ```
 
 ``` npm -v ```
+##  Install Docker and docker-compose
+
+Recommended for using PC with Linux Environment
+
+``` sudo apt install docker docker-compose ```
+
+Check Version docker & docker-compose
+
+``` docker -v ```
+
+``` docker-compose -v ```
+
 
 ##  BUILD PROGRAM
 
-Fill variable API_KEY on the .env file 
+Fill variable on the .env file 
 
-``` npm install ```
+RUN TEST
 
-``` npm run build ```
+``` sudo docker-compose --build ```
 
-### Run Server
-``` npm run start ```
+
+
+### Run Detach
+```  sudo docker-compose --build -d ```
+
+
+if you have question , email me
+
 
