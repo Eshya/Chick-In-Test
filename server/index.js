@@ -14,6 +14,7 @@ const appBackend = express();
 app.use(express.static(DIST_FOLDER));
 
 appBackend.use(cors());
+appBackend.use(express.json());
 appBackend.use('/api', require('./route/route.js'));
 // Use This Port For Front End
 app.listen(PORT, () => console.log(`Listening on http://localhost:${PORT}`));

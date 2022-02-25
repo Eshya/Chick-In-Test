@@ -10,9 +10,9 @@
     <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
     <div id="main">
        
-        <button class="tablink" onclick="openPage('Data0', this, 'red')">Document</button>
+        <button class="tablink" id="defaultOpen" onclick="openPage('Data0', this, 'red')">Document</button>
         <button class="tablink" onclick="openPage('Data1', this, 'red')">Answer.1</button>
-        <button class="tablink" id="defaultOpen" onclick="openPage('Data2', this, 'green')" >Answer.2</button>
+        <button class="tablink"  onclick="openPage('Data2', this, 'green')" >Answer.2</button>
         <button class="tablink" onclick="openPage('Data3', this, 'blue')">Answer.3</button>
         <button class="tablink" onclick="openPage('Data4', this, 'red')">Answer.4</button>
         <button class="tablink" id="defaultOpen" onclick="openPage('Data5', this, 'green')" >Answer.5</button>
@@ -28,15 +28,19 @@
 
         <div id="Data1" class="tabcontent">
             <h3>Answer 1</h3>
-            <p>Salary Conversion</p>
-            <div class="tableboard1"></div>
+            <label for="input1">Input : </label>
+            <input type="text" id="input1" style="width: 100%;" value='[["ilham", "ragil", "kurniawan", "mega", "lodon"],["ilham", "ragil", "bocil", "kematian", "mega"]]'><br><br>
+            <button id="buttonAns1"> Return </button>
+            <p id="ans1"></p>
+            
         </div>
 
         <div id="Data2" class="tabcontent">
             <h3>Answer 2</h3>
-            <p>Sensors Aggregation</p>
-            <p><a href="http://localhost:5000/api/q2 " target="_blank">Open localhost:5000/api/q2</a></p>
-            
+            <label for="input2">Input : </label>
+            <input type="text" id="input2" style="width: 100%;" value='{"code.py":"ilham","input.docx":"ragil","output.py":"ilham"}'><br><br>
+            <button id="buttonAns2"> Return </button>
+            <p id="ans2"></p>
         </div>
 
         <div id="Data3" class="tabcontent">
@@ -68,7 +72,7 @@
         </div>
     </div>
     <!-- <script src="bundle.js" type="text/javascript"></script> -->
-    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery/jquery-3.6.0.min.js"></script>
     <script src="page.js" type="text/javascript"></script>
     <script src="main.js" type="text/javascript"></script>
     
