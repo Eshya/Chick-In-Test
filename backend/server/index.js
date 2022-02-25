@@ -24,7 +24,7 @@ app.listen(PORT, () => console.log(`Listening on http://localhost:${PORT}`));
 appBackend.listen(PORT_BACKEND, () => console.log(`Listening on http://localhost:${PORT_BACKEND}`));
 
 const db = require("./model");
-db.mongoose.connect(process.env.MONGODB_URL || process.env.MONGODB_URL_LOCAL, {
+db.mongoose.connect(process.env.MONGODB_URL_LOCAL || process.env.MONGODB_URL, {
   auth: {
       username: process.env.MONGODB_USERNAME,
       password: process.env.MONGODB_PASSWORD
